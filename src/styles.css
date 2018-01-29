@@ -26,3 +26,19 @@ body {
 .brown {
     background-color: #b28f67;
 }
+
+.theme-yellow {
+    background-color: #fff176;
+}
+
+.theme-green {
+    background-color: #81c784;
+}
+
+.theme-red {
+    background-color: #f06292;
+}
+
+.hint {
+    color: #929292;
+}
