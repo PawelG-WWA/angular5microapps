@@ -1,17 +1,21 @@
-import { Rating } from './rating.model';
-import { ServiceComment } from './service.comment.model';
-import { Service } from './service.model';
+import { Injectable } from '@angular/core';
+import { Rating } from '../models/rating.model';
+import { ServiceComment } from '../models/service.comment.model';
+import { Service } from '../models/service.model';
 import { Comment } from '@angular/compiler';
+import { DbCollection } from '../../re-usables/services/db-collection';
+import { IDb } from '../../re-usables/services/abstract/i-db';
 
-export class DbContext {
+@Injectable()
+export class Database implements IDb {
 
-    public services: Array<Service>;
+    public services: DbCollection<Service>;
 
     constructor() {
         this.seed();
     }
 
-    private seed(): void {
+    public seed(): void {
         // comments
         const designComment1: ServiceComment = {
             text: `Lorem ipsum dolor sit
@@ -98,33 +102,41 @@ export class DbContext {
 
         // services
         const designService: Service = {
-            bannerImagePath: './assets/images/microApp-ComponentsAndDirectives/sketch-huge.png',
+            id: 1,
+            bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/sketch-huge.png',
             comments: designServiceComments,
             description: 'Wonderful apartment designs!',
             link: 'apartment-design',
-            miniImagePath: '.assets/images/microApp-ComponentsAndDirectives/sketch-small.png',
+            miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/sketch-small.png',
             rating: designServiceRating,
             themeColor: 'theme-yellow'
         };
 
         const interiorFinishingService: Service = {
-            bannerImagePath: './assets/images/microApp-ComponentsAndDirectives/paint-roller-huge.png',
+            id: 2,
+            bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/paint-roller-huge.png',
             comments: designServiceComments,
             description: 'Astonishing interior finishing!',
             link: 'interior-finishing',
-            miniImagePath: '.assets/images/microApp-ComponentsAndDirectives/paint-roller-small.png',
+            miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/paint-roller-small.png',
             rating: interiorFinishingRating,
             themeColor: 'theme-green'
         };
 
         const warrantyService: Service = {
-            bannerImagePath: './assets/images/microApp-ComponentsAndDirectives/medal-huge.png',
+            id: 2,
+            bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/medal-huge.png',
             comments: warrantyComments,
             description: 'Lifelong warranty!',
             link: 'warranty',
-            miniImagePath: '.assets/images/microApp-ComponentsAndDirectives/medal-small.png',
+            miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/medal-small.png',
             rating: warrantyRating,
             themeColor: 'theme-red'
         };
+
+        this.services = new DbCollection<Service>();
+        this.services.add(designService);
+        this.services.add(interiorFinishingService);
+        this.services.add(warrantyService);
     }
 }

@@ -8,4 +8,8 @@ import { Tile } from '../../models/tile.model';
 })
 export class TileComponent {
     @Input() tileData: Tile;
+
+    public getPath(): string[] {
+        return [`/${this.tileData.path}`];
+    }
 }

@@ -1,0 +1,8 @@
+#available-services {
+    overflow: hidden;
+    margin-top: 8em;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

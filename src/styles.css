@@ -42,3 +42,30 @@ body {
 .hint {
     color: #929292;
 }
+
+.thumb {
+    width: 8vw;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.categories {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    float: left;
+}
+
+.categories:hover {
+    border: 1px solid #81c784;
+    transition: border 0.2s;
+}
+
+.subtitle {
+    margin-top: 3em;
+}
+
+#available-services .categories {
+    margin: 1vw;
+}

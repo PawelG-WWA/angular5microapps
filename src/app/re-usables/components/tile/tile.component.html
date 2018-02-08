@@ -1,5 +1,5 @@
 <div class="tile-container">
-    <button [ngClass]="tileData.color" [routerLink]="tileData.path">
+    <button [ngClass]="tileData.color" [routerLink]="getPath()">
         <span>{{ tileData.title }}</span>
     </button>
 </div>
