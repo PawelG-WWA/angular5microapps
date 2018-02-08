@@ -6,7 +6,7 @@ export class Service extends DbEntity {
     public bannerImagePath: string;
     public miniImagePath: string;
     public description: string;
-    public link: string;
+    public link: Array<string>;
     public themeColor: string;
     public comments: Array<ServiceComment>;
     public rating: Rating;

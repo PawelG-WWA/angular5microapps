@@ -5,12 +5,15 @@ import { RouterModule, Routes } from '@angular/router';
 // components
 import { MaOneBootstrapComponent } from './components/ma-one-bootstrap/ma-one-bootstrap.component';
 import { ServiceSelectionComponent } from './components/service-selection/service-selection.component';
+import { ServicePageBootstrapComponent } from './components/service-page/service-page-bootstrap/service-page-bootstrap.component';
+import { BannerImageComponent } from './components/service-page/banner-image/banner-image.component';
 
 // service providers
 import { MA1_SERVICES_PROVIDERS } from './services/services.providers';
 
 const children: Routes = [
-
+    { path: '', component: ServiceSelectionComponent },
+    { path: 'service/:name', component: ServicePageBootstrapComponent }
 ];
 
 const baseRoutes: Routes = [
@@ -20,7 +23,9 @@ const baseRoutes: Routes = [
 @NgModule({
     declarations: [
         MaOneBootstrapComponent,
-        ServiceSelectionComponent
+        ServiceSelectionComponent,
+        ServicePageBootstrapComponent,
+        BannerImageComponent
     ],
     imports: [
         BrowserModule,

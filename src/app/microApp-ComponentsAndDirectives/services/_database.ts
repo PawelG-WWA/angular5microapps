@@ -106,7 +106,7 @@ export class Database implements IDb {
             bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/sketch-huge.png',
             comments: designServiceComments,
             description: 'Wonderful apartment designs!',
-            link: 'apartment-design',
+            link: ['./service', 'apartment-design'],
             miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/sketch-small.png',
             rating: designServiceRating,
             themeColor: 'theme-yellow'
@@ -117,7 +117,7 @@ export class Database implements IDb {
             bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/paint-roller-huge.png',
             comments: designServiceComments,
             description: 'Astonishing interior finishing!',
-            link: 'interior-finishing',
+            link: ['./service', 'interior-finishing'],
             miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/paint-roller-small.png',
             rating: interiorFinishingRating,
             themeColor: 'theme-green'
@@ -128,7 +128,7 @@ export class Database implements IDb {
             bannerImagePath: '/assets/images/microApp-ComponentsAndDirectives/medal-huge.png',
             comments: warrantyComments,
             description: 'Lifelong warranty!',
-            link: 'warranty',
+            link: ['./service', 'warranty'],
             miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/medal-small.png',
             rating: warrantyRating,
             themeColor: 'theme-red'

@@ -1,0 +1,9 @@
+.banner-placeholder {
+    overflow: hidden;
+}
+
+.banner-placeholder img {
+    width: 100vw;
+    vertical-align: bottom;
+    height: 50vh;
+}
