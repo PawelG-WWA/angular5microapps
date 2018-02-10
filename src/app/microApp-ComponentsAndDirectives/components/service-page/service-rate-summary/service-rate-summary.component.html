@@ -1,0 +1,17 @@
+<section class="rating" [ngClass]="theme">
+    <div class="container">
+        <label class="on-background">{{ serviceDescription }}</label>
+
+        <div class="rating-summary">
+            <div class="column">
+                <img [src]="currentDislikeImage" (click)="dislikeClicked()" />
+                <label class="on-background">{{ rating.bad }}</label>
+            </div>
+
+            <div class="column">
+                <img [src]="currentLikeImage" (click)="likeClicked()" />
+                <label class="on-background">{{ rating.good }}</label>
+            </div>
+        </div>
+    </div>
+</section>

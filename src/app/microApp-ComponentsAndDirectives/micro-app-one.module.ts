@@ -7,6 +7,7 @@ import { MaOneBootstrapComponent } from './components/ma-one-bootstrap/ma-one-bo
 import { ServiceSelectionComponent } from './components/service-selection/service-selection.component';
 import { ServicePageBootstrapComponent } from './components/service-page/service-page-bootstrap/service-page-bootstrap.component';
 import { BannerImageComponent } from './components/service-page/banner-image/banner-image.component';
+import { ServiceRateSummaryComponent } from './components/service-page/service-rate-summary/service-rate-summary.component';
 
 // service providers
 import { MA1_SERVICES_PROVIDERS } from './services/services.providers';
@@ -25,7 +26,8 @@ const baseRoutes: Routes = [
         MaOneBootstrapComponent,
         ServiceSelectionComponent,
         ServicePageBootstrapComponent,
-        BannerImageComponent
+        BannerImageComponent,
+        ServiceRateSummaryComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,39 @@
+.rating {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    right: 35vh;
+    top: -10vh;
+    width: 20vw;
+}
+
+.rating .container {
+    padding: 2em;
+    text-align: center;
+}
+
+.rating-summary {
+    margin-top: 1.4em;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.rating-summary .column {
+    float: left;
+}
+
+.rating-summary .column:first-child {
+    margin-right: 2em;
+}
+
+.rating-summary .column img {
+    display: block;
+    margin-bottom: 0.7em;
+}
+
+.rating img {
+    width: 60px;
+}

@@ -96,9 +96,17 @@ export class Database implements IDb {
         warrantyComments.push(warrantyComment3);
 
         // ratings
-        const designServiceRating: Rating = { bad: 1, good: 2 };
-        const interiorFinishingRating: Rating = { bad: 2, good: 1};
-        const warrantyRating: Rating = { bad: 0, good: 3};
+        const designServiceRating: Rating = new Rating();
+        designServiceRating.bad = 1;
+        designServiceRating.good = 2;
+
+        const interiorFinishingRating: Rating = new Rating();
+        interiorFinishingRating.bad = 2;
+        interiorFinishingRating.good = 1;
+
+        const warrantyRating: Rating = new Rating();
+        warrantyRating.bad = 0;
+        warrantyRating.good = 3;
 
         // services
         const designService: Service = {
@@ -109,7 +117,7 @@ export class Database implements IDb {
             link: ['./service', 'apartment-design'],
             miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/sketch-small.png',
             rating: designServiceRating,
-            themeColor: 'theme-yellow'
+            themeColor: 'theme-blue'
         };
 
         const interiorFinishingService: Service = {
