@@ -139,7 +139,7 @@ export class Database implements IDb {
             link: ['./service', 'warranty'],
             miniImagePath: 'assets/images/microApp-ComponentsAndDirectives/medal-small.png',
             rating: warrantyRating,
-            themeColor: 'theme-red'
+            themeColor: 'theme-orange'
         };
 
         this.services = new DbCollection<Service>();
