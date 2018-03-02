@@ -28,16 +28,30 @@ body {
     background-color: #b28f67;
 }
 
-.theme-blue {
+button.theme-blue,
+section.theme-blue {
     background-color: #4fc3f7;
 }
-
-.theme-green {
+button.theme-green,
+section.theme-green {
     background-color: #81c784;
 }
 
-.theme-orange {
+button.theme-orange,
+section.theme-orange {
     background-color: #ffb74d;
+}
+
+svg.theme-blue {
+    fill: #4fc3f7;
+}
+
+svg.theme-green {
+    fill: #81c784;
+}
+
+svg.theme-orange {
+    fill: #ffb74d;
 }
 
 .hint {

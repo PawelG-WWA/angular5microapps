@@ -1,5 +1,10 @@
 <app-banner-image [imagePath]="service.bannerImagePath"></app-banner-image>
-<app-serivce-rate-summary
-    [rating]="service.rating"
-    [theme]="service.themeColor"
-    [serviceDescription]="service.description"></app-serivce-rate-summary>
+<app-serivce-rate-summary [rating]="service.rating" [theme]="service.themeColor" [serviceDescription]="service.description"></app-serivce-rate-summary>
+<section class="comments">
+    <app-service-comment *ngFor="let comment of service.comments" [comment]="comment" [theme]="service.themeColor"></app-service-comment>
+    <button class="new-comment" [ngClass]="service.themeColor" (click)="togglePopup()">
+        <img src="/assets/images/microApp-ComponentsAndDirectives/plus-symbol.png" />
+    </button>
+</section>
+
+<app-add-comment *ngIf="isPopupOn" (onCancel)="togglePopup()" (onSave)="saveCommentForService($event)" [theme]="service.themeColor"></app-add-comment>

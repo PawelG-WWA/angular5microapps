@@ -1,0 +1,113 @@
+@keyframes easeInOverlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes easeInPopup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    animation: 0.25s ease-in 0s 1 easeInOverlay;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.popup {
+    animation: 0.35s ease-in-out 0s 1 easeInPopup;
+    width: 50vw;
+    height: 40vh;
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 0 0 40px gray;
+}
+
+.popup form {
+    height: 100%;
+    overflow: hidden;
+}
+
+.popup textarea {
+    min-width: 95%;
+    min-height: 40%;
+    resize: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+    font-size: 2.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    width: 95%;
+    margin: 2em auto;
+}
+
+.popup-btn {
+    border: none;
+    width: 45%;
+    padding: 10px;
+    font-size: 2em;
+    color: white;
+}
+
+.popup-btn:hover {
+    cursor: pointer;
+}
+
+.save {
+    float: left;
+}
+
+.cancel {
+    float: right;
+}
+
+.opinion {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5%;
+}
+
+.broken-heart-wrapper,
+.full-heart-wrapper {
+    width: 30%;
+    height: 100%;
+}
+
+.broken-heart-wrapper {
+    float: left;
+}
+
+.full-heart-wrapper {
+    float: right;
+}
+
+.grayed {
+    fill: lightgray;
+}
+
+svg:hover {
+    cursor: pointer;
+}

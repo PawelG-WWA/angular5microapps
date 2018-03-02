@@ -1,0 +1,51 @@
+.comment-container {
+    margin-bottom: 2em;
+}
+
+.comment-box,
+.shadow-box {
+    background-color: white;
+}
+
+.opinion-summary {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 1.25em;
+}
+
+.comment-rate-summary {
+    float: left;
+    margin-right: 2em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.comment-box {
+    overflow: hidden;
+    padding: 2em;
+}
+
+.comment-box p {
+    float: left;
+    width: 80%;
+    position: relative;
+    top: 1.1em;
+}
+
+.not-clicked {
+    fill: #aaaaaa;
+}
+
+.like-counter {
+    color: #aaaaaa;
+}
+
+.shadow-box {
+    position: relative;
+    top: -20px;
+    box-shadow: 0 5px 20px gray;
+    height: 20px;
+    width: 98%;
+    margin: 0 auto;
+    z-index: -1;
+}

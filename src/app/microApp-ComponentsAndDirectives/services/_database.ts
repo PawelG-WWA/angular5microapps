@@ -17,68 +17,60 @@ export class Database implements IDb {
 
     public seed(): void {
         // comments
-        const designComment1: ServiceComment = {
-            text: `Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`,
-            likeCounter: 0,
-            isFlattered: false
-        };
+        const designComment1: ServiceComment = new ServiceComment();
+        designComment1.text = `Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`;
+        designComment1.likeCounter = 0;
+        designComment1.isFlattered = false;
 
-        const designComment2: ServiceComment = {
-            text: `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
-                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`,
-            likeCounter: 5,
-            isFlattered: true
-        };
+        const designComment2: ServiceComment = new ServiceComment();
+        designComment2.text = `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
+                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`;
+        designComment2.likeCounter = 5;
+        designComment2.isFlattered = true;
 
-        const designComment3: ServiceComment = {
-            text: `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
-                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`,
-            likeCounter: 12,
-            isFlattered: true
-        };
+        const designComment3: ServiceComment = new ServiceComment();
+        designComment3.text = `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
+                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`;
+        designComment3.likeCounter = 12;
+        designComment3.isFlattered = true;
 
-        const interiorFinishingComment1: ServiceComment = {
-            text: `Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`,
-            likeCounter: 2,
-            isFlattered: true
-        };
+        const interiorFinishingComment1: ServiceComment = new ServiceComment();
+        interiorFinishingComment1.text = `Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`;
+        interiorFinishingComment1.likeCounter = 2;
+        interiorFinishingComment1.isFlattered = true;
 
-        const interiorFinishingComment2: ServiceComment = {
-            text: `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
-                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`,
-            likeCounter: 1,
-            isFlattered: false
-        };
+        const interiorFinishingComment2: ServiceComment = new ServiceComment();
+        interiorFinishingComment2.text = `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
+                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`;
+        interiorFinishingComment2.likeCounter = 1;
+        interiorFinishingComment2.isFlattered = false;
 
-        const interiorFinishingComment3: ServiceComment = {
-            text: `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
-                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`,
-            likeCounter: 0,
-            isFlattered: false
-        };
+        const interiorFinishingComment3: ServiceComment = new ServiceComment();
+        interiorFinishingComment3.text = `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
+                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`;
+        interiorFinishingComment3.likeCounter = 0;
+        interiorFinishingComment3.isFlattered = false;
 
-        const warrantyComment1: ServiceComment = {
-            text: `Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`,
-            likeCounter: 0,
-            isFlattered: true
-        };
+        const warrantyComment1: ServiceComment = new ServiceComment();
+        warrantyComment1.text = `Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed semper dolor quis diam ornare, in facilisis elit blandit.`;
+        warrantyComment1.likeCounter = 0;
+        warrantyComment1.isFlattered = true;
 
-        const warrantyComment2: ServiceComment = {
-            text: `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
-                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`,
-            likeCounter: 1,
-            isFlattered: true
-        };
+        const warrantyComment2: ServiceComment = new ServiceComment();
+        warrantyComment2.text = `Nullam sagittis varius viverra. Cras sollicitudin mattis eros,
+                vel facilisis mi fringilla ut. Cras bibendum semper mollis.`;
+        warrantyComment2.likeCounter = 1;
+        warrantyComment2.isFlattered = true;
 
-        const warrantyComment3: ServiceComment = {
-            text: `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
-                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`,
-            likeCounter: 2,
-            isFlattered: true
-        };
+        const warrantyComment3: ServiceComment = new ServiceComment();
+        warrantyComment3.text = `Nullam venenatis, nibh et ullamcorper iaculis, nulla purus blandit enim,
+                vitae ullamcorper quam risus vitae lectus. Vestibulum a ultricies augue, sed iaculis odio.`;
+        warrantyComment3.likeCounter = 2;
+        warrantyComment3.isFlattered = true;
+
 
         const designServiceComments = new Array<ServiceComment>();
         designServiceComments.push(designComment1);
