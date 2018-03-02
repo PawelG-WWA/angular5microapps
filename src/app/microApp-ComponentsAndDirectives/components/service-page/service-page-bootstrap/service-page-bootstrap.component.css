@@ -11,3 +11,31 @@
     margin-bottom: 10vh;
     float: right;
 }
+
+.mobile-menu {
+    display: none;
+}
+
+/* iPhone X, iPhone 8/+, iPhone 7/+ */
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+
+    .mobile-menu {
+        display: block;
+        box-shadow: 0 0 10px gray;
+        background-color: white;
+        width: 100vw;
+        height: 7vh;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .comments {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .service-wrapper {
+        overflow: hidden;
+        background-color: rgb(230, 230, 230);
+    }
+}

@@ -1,0 +1,7 @@
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+    .service {
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(230, 230, 230);
+    }
+}   

@@ -111,3 +111,17 @@
 svg:hover {
     cursor: pointer;
 }
+
+/* iPhone X, iPhone 8/+, iPhone 7/+ */
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+
+    .popup {
+        width: 80vw;
+        height: 70vh;
+        z-index:10;
+    }
+
+    textarea {
+        width: 50%;
+    }
+}

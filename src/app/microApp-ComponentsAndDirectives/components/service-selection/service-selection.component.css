@@ -14,3 +14,62 @@
     width: 16vw;
     height: 40vh;
 }
+.category:hover {
+    cursor: pointer;
+}
+
+.categories {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    float: left;
+}
+
+.categories:hover {
+    border: 1px solid #81c784;
+    transition: border 0.2s;
+    cursor: pointer;
+}
+
+#available-services .categories {
+    margin: 1vw;
+}
+
+.thumb {
+    width: 8vw;
+}
+
+/* iPhone X, iPhone 8/+, iPhone 7/+ */
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+    #available-services {
+        margin: 0;
+    }
+
+    .categories {
+        border: none;
+        border-radius: 0;
+        clear: both;
+    }
+
+    #available-services .categories {
+        margin: 0.5vh 0 0.5vh 0;
+    }
+
+    .category {
+        padding: 45px;
+        width: 100vw;
+        height: 33vh;
+    }
+
+    .thumb {
+        width: 30vw;
+    }
+
+    .mobile-menu {
+        display: block;
+        background-color: black;
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        bottom: 0;
+    }
+}

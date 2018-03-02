@@ -1,10 +1,16 @@
-<app-banner-image [imagePath]="service.bannerImagePath"></app-banner-image>
-<app-serivce-rate-summary [rating]="service.rating" [theme]="service.themeColor" [serviceDescription]="service.description"></app-serivce-rate-summary>
-<section class="comments">
-    <app-service-comment *ngFor="let comment of service.comments" [comment]="comment" [theme]="service.themeColor"></app-service-comment>
-    <button class="new-comment" [ngClass]="service.themeColor" (click)="togglePopup()">
-        <img src="/assets/images/microApp-ComponentsAndDirectives/plus-symbol.png" />
-    </button>
-</section>
+<app-banner-image [imagePath]="service.bannerImagePath">
+</app-banner-image>
+<section class="service-wrapper">
+    <app-serivce-rate-summary [rating]="service.rating" [theme]="service.themeColor" [serviceDescription]="service.description"></app-serivce-rate-summary>
+    <section class="comments">
+        <app-service-comment *ngFor="let comment of service.comments" [comment]="comment" [theme]="service.themeColor"></app-service-comment>
+        <button class="new-comment" [ngClass]="service.themeColor" (click)="togglePopup()">
+            <img src="/assets/images/microApp-ComponentsAndDirectives/plus-symbol.png" />
+        </button>
+    </section>
 
-<app-add-comment *ngIf="isPopupOn" (onCancel)="togglePopup()" (onSave)="saveCommentForService($event)" [theme]="service.themeColor"></app-add-comment>
+    <app-add-comment *ngIf="isPopupOn" (onCancel)="togglePopup()" (onSave)="saveCommentForService($event)" [theme]="service.themeColor"></app-add-comment>
+</section>
+<div class="mobile-menu">
+
+</div>

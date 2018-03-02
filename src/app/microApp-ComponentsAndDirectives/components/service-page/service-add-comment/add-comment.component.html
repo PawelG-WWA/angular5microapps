@@ -18,12 +18,12 @@
     <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
         <div class="opinion">
             <div class="broken-heart-wrapper">
-                <svg viewBox="0 0 50 50" width="100%" height="100%" [ngClass]="dislikeState" (click)="toggleDislike()">
+                <svg viewBox="0 0 60 60" width="100%" height="100%" [ngClass]="dislikeState" (click)="toggleDislike()">
                     <use xlink:href="#broken-heart"></use>
                 </svg>
             </div>
             <div class="full-heart-wrapper">
-                <svg viewBox="0 0 50 50" width="100%" height="100%" [ngClass]="likeState" (click)="toggleLike()">
+                <svg viewBox="0 0 60 60" width="100%" height="100%" [ngClass]="likeState" (click)="toggleLike()">
                     <use xlink:href="#full-heart"></use>
                 </svg>
             </div>

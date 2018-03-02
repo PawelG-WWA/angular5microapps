@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./ma-one-bootstrap.component.css']
 })
 export class MaOneBootstrapComponent {
+
 }

@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.comment-rate-summary-mobile {
+    display: none;
+}
+
 .comment-box {
     overflow: hidden;
     padding: 2em;
@@ -48,4 +52,27 @@
     width: 98%;
     margin: 0 auto;
     z-index: -1;
+}
+
+.thumbup:hover {
+    cursor: pointer;
+}
+
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+
+    .comment-container {
+        margin: 1em 1em 1em 1em;
+    }
+
+    .shadow-box {
+        display: none;
+    }
+
+    .comment-box p {
+        margin-top: 0;
+    }
+
+    .comment-rate-summary {
+        margin-right: 1em;
+    }
 }

@@ -30,7 +30,7 @@
                     <use xlink:href="#full-heart"></use>
                 </svg>
             </div>
-            <svg viewBox="-100 0 750 750" [ngClass]="isLiked(comment)" (click)="likeComment(comment)">
+            <svg class="thumbup" viewBox="-100 0 750 750" [ngClass]="isLiked(comment)" (click)="likeComment(comment)">
                 <use xlink:href="#thumb-up"></use>
             </svg>
             <label class="like-counter">{{ comment.likeCounter }}</label>

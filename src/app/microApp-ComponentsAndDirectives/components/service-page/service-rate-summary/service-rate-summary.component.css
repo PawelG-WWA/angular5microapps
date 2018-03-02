@@ -33,6 +33,21 @@
     margin-bottom: 0.7em;
 }
 
+.rating-summary .column img:hover {
+    cursor: pointer;
+}
+
 .rating img {
     width: 60px;
+}
+
+@media (min-resolution: 400dpi), (min-width: 350px) and (max-width: 900px) {
+
+    .rating {
+        overflow: hidden;
+        position: static;
+        width: 100vw;
+        height: 30vh;
+    }
+
 }
